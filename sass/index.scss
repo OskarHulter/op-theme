@@ -1,0 +1,56 @@
+@import 'open-props/style';
+
+$text-light: var(--gray-9);
+$background-light: var(--gray-0);
+$text-dark: var(--gray-0);
+$background-dark: var(--gray-9);
+
+:root {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-1);
+  line-height: var(--font-lineheight-1);
+
+  color-scheme: light dark;
+  color: $text-light;
+  background-color: $background-light;
+
+  @media (prefers-color-scheme: dark) {
+    color: $text-dark;
+    background-color: $background-dark;
+  }
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: var(--font-size-6);
+  line-height: var(--font-lineheight-1);
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--size-5);
+  text-align: center;
+}
+
+.logo {
+  height: var(--size-10);
+  padding: var(--size-5);
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #f7df1eaa);
+}
+
+.read-the-docs {
+  color: var(--gray-5);
+}

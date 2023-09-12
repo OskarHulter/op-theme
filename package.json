@@ -1,0 +1,19 @@
+{
+    "name": "vite-starter",
+    "version": "0.0.0",
+    "type": "module",
+    "browserslist": ["defaults"],
+    "scripts": {
+      "css": "postcss index.css -o index.min.css"
+    },
+    "devDependencies": {
+      "postcss": "^8.4.16",
+      "postcss-cli": "^10.0.0",
+      "sass": "^1.54.4"
+    },
+    "dependencies": {
+      "open-props": "^1.4.13",
+      "postcss-jit-props": "1.0.7"
+    }
+  }
+  

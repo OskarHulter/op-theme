@@ -1,0 +1,7 @@
+:root {
+    --gradient-1: linear-gradient(to bottom right,#1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
+  }
+  html {
+    background: var(--gradient-1);
+  }
+  

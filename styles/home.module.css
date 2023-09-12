@@ -1,0 +1,113 @@
+.title {
+    opacity: 0;
+    animation: var(--animation-fade-in) forwards,
+      var(--animation-slide-in-up) forwards;
+    animation-timing-function: var(--ease-squish-3);
+  }
+  
+  .container {
+    min-height: 100vh;
+    padding-inline: var(--size-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main {
+    padding-block: var(--size-10);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer {
+    height: var(--size-content-2);
+    border-top: var(--border-size-1) solid var(--surface-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer img {
+    margin-inline-start: var(--size-2);
+  }
+  
+  .footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: var(--font-size-8);
+  }
+  
+  .title,
+  .description {
+    text-align: center;
+  }
+  
+  .description {
+    font-size: var(--font-size-4);
+  }
+  
+  .code {
+    background: var(--surface-2);
+    border-radius: var(--radius-2);
+    padding: var(--size-2);
+    font-size: var(--font-size-2);
+    font-family: var(--font-monospace);
+  }
+  
+  .grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin-top: var(--size-fluid-5);
+  }
+  
+  .card {
+    display: grid;
+    gap: var(--size-3);
+    justify-items: start;
+    margin: var(--size-3);
+    flex-basis: 45%;
+    padding: var(--size-fluid-3);
+    text-align: left;
+    text-decoration: none;
+    color: inherit;
+    border: var(--border-size-1) solid var(--surface-3);
+    border-radius: var(--radius-3);
+    transition: color 0.15s var(--ease-3), border-color 0.15s var(--ease-3);
+  }
+  
+  .card:is(:hover, :focus, :active) {
+    color: var(--link);
+    border-color: var(--link);
+  }
+  
+  .card h3 {
+    margin-block-end: var(--size-3);
+    font-size: var(--font-size-4);
+  }
+  
+  .card p {
+    font-size: var(--font-size-3);
+  }
+  
+  .logo {
+    height: 1em;
+  }
+  
+  @media (max-width: 600px) {
+    .grid {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+  
