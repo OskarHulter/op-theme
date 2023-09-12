@@ -7,12 +7,15 @@
       "css": "postcss index.css -o index.min.css"
     },
     "devDependencies": {
+      "sass": "^1.54.4",
       "postcss": "^8.4.16",
       "postcss-cli": "^10.0.0",
-      "sass": "^1.54.4"
+      "oxlint": "latest",
+      "oxidation-compiler": "latest",
+      "@oxidation-compiler/napi": "latest"
     },
     "dependencies": {
-      "open-props": "^1.4.13",
+      "open-props": "latest",
       "postcss-jit-props": "1.0.7"
     }
   }
