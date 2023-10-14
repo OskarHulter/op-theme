@@ -1,14 +1,21 @@
 {
-	"compilerOptions": {
-		"allowJs": true,
-		"declaration": true,
-		"emitDeclarationOnly": true,
-		"esModuleInterop": true,
-		"target": "ESNext",
-		"module": "ESNext",
-		"moduleResolution": "NodeNext",
-		"skipLibCheck": true
-	},
-	"include": ["dist/open-props.module.js", "src/props.*.js"],
-	"exclude": ["node_modules", "src/*.src.js"]
+    "compilerOptions": {
+        "allowJs": true,
+        "declaration": true,
+        "emitDeclarationOnly": true,
+        "esModuleInterop": true,
+        "target": "ESNext",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "skipLibCheck": true,
+        "allowUmdGlobalAccess": true
+    },
+    "include": [
+        "dist/open-props.module.js",
+        "src/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "src/*.src.js"
+    ]
 }

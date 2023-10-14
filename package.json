@@ -1,22 +1,35 @@
 {
-    "name": "vite-starter",
-    "version": "0.0.0",
-    "type": "module",
-    "browserslist": ["defaults"],
-    "scripts": {
-      "css": "postcss index.css -o index.min.css"
-    },
-    "devDependencies": {
-      "sass": "^1.54.4",
-      "postcss": "^8.4.16",
-      "postcss-cli": "^10.0.0",
-      "oxlint": "latest",
-      "oxidation-compiler": "latest",
-      "@oxidation-compiler/napi": "latest"
-    },
-    "dependencies": {
-      "open-props": "latest",
-      "postcss-jit-props": "1.0.7"
-    }
+  "name": "vite-starter",
+  "version": "0.0.0",
+  "type": "module",
+  "browserslist": [
+    "defaults"
+  ],
+  "scripts": {
+    "css": "postcss index.css -o index.min.css",
+    "build": "lightningcss --minify --sourcemap --bundle --targets '>= 0.25%' input.css -o output.css"
+  },
+  "devDependencies": {
+    "@oxidation-compiler/napi": "latest",
+    "bun-types": "latest",
+    "lightningcss": "^1.22.0",
+    "lightningcss-cli": "^1.22.0",
+    "oxidation-compiler": "latest",
+    "oxlint": "latest",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0",
+    "sass": "^1.54.4",
+    "wallace-cli": "^3.0.0"
+  },
+  "dependencies": {
+    "@ladle/react": "^3.2.1",
+    "open-props": "latest",
+    "postcss-jit-props": "1.0.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "module": "index.ts",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   }
-  
+}

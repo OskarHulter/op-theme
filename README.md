@@ -32,3 +32,25 @@
 - `npm run gen:prefixed` - creates a version of Open Props with each prop prefixed with `op`, like `--op-font-size-1`
 - `npm run bundle` - creates all the various minified bundles of props
 - `npm run lib:js` - builds the JS modules for NPM
+
+# Wallace css analyzer
+
+Usage
+  $ wallace <path-to-file>
+
+Options
+  --json Format as JSON instead of a table
+  --help, -h Show this help
+
+Examples
+  # Point to a file
+  $ wallace path/to/styles.css
+
+  # CSS via stdin
+  $ cat style.css | wallace
+
+  # CSS from a server
+  $ curl http://localhost/css/style.css | wallace
+
+  # Format as json
+  $ wallace path/to/styles.css --json
